@@ -1,4 +1,4 @@
-{% extends 'layout.html' %} 
+{% extends 'layout.html' %}
 
 {% load static %} 
 
@@ -9,56 +9,64 @@
       <div class="banner_content">
         <div class="media">
           <div class="d-flex">
-            <img src="{% get_media_prefix %}img/personaal.jpg" alt="" style="width: %100; max-width: 500px" />
+            <img
+              src="{% get_media_prefix %}img/personaal.jpg"
+              alt=""
+              style="width: %100; max-width: 500px"
+            />
           </div>
           <div class="media-body">
             <div class="personal_text">
               <h6>Hi, It's Me</h6>
               <h3>Halil Efe Sonmez</h3>
-                <div class="wrapper">
-                  <div class="static-txt">I'm a Junior</div>
-                    <ul class="dynamic-txts">
-                      <li><span>SOFTWARE DEVELOPER</span></li>
-                      <li><span>PROJECT MANAGER</span></li>
-                    </ul>
-                </div>
+              <div class="wrapper">
+                <div class="static-txt">I'm a Junior</div>
+                <ul class="dynamic-txts">
+                  <li><span>SOFTWARE DEVELOPER</span></li>
+                  <li><span>PROJECT MANAGER</span></li>
+                </ul>
+              </div>
               <p>
-				" I have a Bachelor's degree in Electrical and Electronics Engineering and lots of experience working on projects related to Python, web development, automation and data management. I'm always on the lookout for new challenges and ways to improve my skills. 
-				Right now, I'm building websites for my own projects and the companies I work for. "
+                " I have a Bachelor's degree in Electrical and Electronics
+                Engineering and lots of experience working on projects related
+                to Python, web development, automation and data management. I'm
+                always on the lookout for new challenges and ways to improve my
+                skills. Right now, I'm building websites for my own projects and
+                the companies I work for. "
               </p>
 
               <ul class="list basic_info">
                 <li>
-                  <a href="#"
-                    ><i class="lnr lnr-calendar-full"></i> 31st December,
-                    1992</a
+                  <a href="tel: +34 695653155"
+                    ><i class="lnr lnr-phone-handset"></i>+34 695 653 155</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a
+                  <a href="mailto:efesoonmez@gmail.com"
+                    ><i class="lnr lnr-envelope"></i> efesoonmez@gmail.com</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="lnr lnr-envelope"></i> businessplan@donald</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="lnr lnr-home"></i> Santa monica bullevard</a
+                  <a href="javascript:void(0)"
+                    ><i class="lnr lnr-home"></i>Almeria, Spain</a
                   >
                 </li>
               </ul>
               <ul class="list personal_social">
                 <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="https://twitter.com/hefesonmez" target="_blank"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/halilefesonmez/"
+                    target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -68,7 +76,8 @@
     </div>
   </div>
 </section>
-{% endblock %}
+
+{% endblock %} 
 
 {% block content %}
 <section class="welcome_area p_120">
@@ -83,29 +92,6 @@
             That’s why it’s crucial that, as women, our behavior on the job is
             beyond reproach. inappropriate behavior is often laughed.
           </p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="wel_item">
-                <i class="lnr lnr-database"></i>
-                <h4>$2.5M</h4>
-                <p>Total Donation</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="wel_item">
-                <i class="lnr lnr-book"></i>
-                <h4>1465</h4>
-                <p>Total Projects</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="wel_item">
-                <i class="lnr lnr-users"></i>
-                <h4>3965</h4>
-                <p>Total Volunteers</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="col-lg-6">
@@ -187,7 +173,7 @@
     </div>
   </div>
 </section>
-<!--================End Welcome Area =================-->
+
 
 <!--================My Tabs Area =================-->
 <section class="mytabs_area p_120">
@@ -316,56 +302,4 @@
 </section>
 <!--================End My Tabs Area =================-->
 
-{% comment %} <!--================Feature Area =================-->
-<section class="feature_area p_120">
-  <div class="container">
-    <div class="main_title">
-      <h2>offerings to my clients</h2>
-      <p>
-        If you are looking at blank cassettes on the web, you may be very
-        confused at the difference in price. You may see some for as low as $.17
-        each.
-      </p>
-    </div>
-    <div class="feature_inner row">
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
-          <i class="flaticon-city"></i>
-          <h4>Architecture</h4>
-          <p>
-            If you are looking at blank cassettes on the web, you may be very
-            confused at the difference in price. You may see some for as low as
-            $17 each.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
-          <i class="flaticon-skyline"></i>
-          <h4>Interior Design</h4>
-          <p>
-            If you are looking at blank cassettes on the web, you may be very
-            confused at the difference in price. You may see some for as low as
-            $17 each.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="feature_item">
-          <i class="flaticon-sketch"></i>
-          <h4>Concept Design</h4>
-          <p>
-            If you are looking at blank cassettes on the web, you may be very
-            confused at the difference in price. You may see some for as low as
-            $17 each.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--================End Feature Area =================--> {% endcomment %}
-
 {% endblock %}
-
-

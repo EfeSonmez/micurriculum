@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECRET_KEY = "django-insecure-6y!_rsxbv^0$=4hiah&^)1(ovn@44i3*^$^%(9opqby3lk+&#)"
 
 DEBUG = env('DEBUG')
-# DEBUG=True
+
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
@@ -41,6 +41,7 @@ CSRF_TRUSTED_ORIGINS = env('CSRF_TRUSTED_ORIGINS', cast=list)
 
 INSTALLED_APPS = [
     "cvapp",
+    "contact",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
