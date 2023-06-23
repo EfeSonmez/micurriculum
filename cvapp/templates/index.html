@@ -4,7 +4,7 @@
 
 {% block banner_area %}
 <section class="home_banner_area">
-  <div class="container box_1620">
+  <div class="container box_1620" style="bottom: -150px">
     <div class="banner_inner d-flex align-items-center">
       <div class="banner_content">
         <div class="media">
@@ -75,98 +75,105 @@
 {% endblock %} 
 
 {% block content %}
-<section class="welcome_area p_120">
+
+<section class="welcome_area" style="padding-bottom: 70px;">
   <div class="container">
-    <div class="row welcome_inner">
-      <div class="col-lg-6">
-        <div class="welcome_text">
-          <h4>About Myself</h4>
-          <p>
-            inappropriate behavior is often laughed off as “boys will be boys,”
-            women face higher conduct standards especially in the workplace.
-            That’s why it’s crucial that, as women, our behavior on the job is
-            beyond reproach. inappropriate behavior is often laughed.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-6">
+    <span>Backend</span>
+    <div class="row welcome_inner" style="margin-bottom: 1em;">
+      {% for skill in skills %}
+      {% if skill.percentage %}
+      <div class="col-md-3">
         <div class="tools_expert">
           <div class="skill_main">
-            <div class="skill_item">
-              <h4>After Effects <span class="counter">85</span>%</h4>
-              <div class="progress_br">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div class="skill_item">
+                  <h4> {{ skill.backendname }} <span class="counter">{{ skill.percentage }}</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="{{ skill.percentage }}"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="skill_item">
-              <h4>Photoshop <span class="counter">90</span>%</h4>
-              <div class="progress_br">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div class="skill_item">
-              <h4>Illustrator <span class="counter">70</span>%</h4>
-              <div class="progress_br">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div class="skill_item">
-              <h4>Sublime <span class="counter">95</span>%</h4>
-              <div class="progress_br">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div class="skill_item">
-              <h4>Sketch <span class="counter">75</span>%</h4>
-              <div class="progress_br">
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
+
     </div>
+    <hr>
+
+    <span>Frontend</span>
+    <div class="row welcome_inner" style="margin-bottom: 1em;">
+      {% for skill in skills %}
+      {% if skill.percentage3 %}
+      <div class="col-md-3">
+        <div class="tools_expert">
+          <div class="skill_main">
+                <div class="skill_item">
+                  <h4> {{ skill.frontname }} <span class="counter">{{ skill.percentage3 }}</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="{{ skill.percentage3 }}"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+    <hr>
+    <span>Frontend</span>
+    <div class="row welcome_inner" style="margin-bottom: 1em;">
+      {% for skill in skills %}
+      {% if skill.percentage4 %}
+      <div class="col-md-3">
+        <div class="tools_expert">
+          <div class="skill_main">
+                <div class="skill_item">
+                  <h4> {{ skill.pmname }} <span class="counter">{{ skill.percentage4 }}</span>%</h4>
+                  <div class="progress_br">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="{{ skill.percentage4 }}"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+
+    </div>
+    <hr>
+
+    </div>
+
   </div>
+
 </section>
 
 

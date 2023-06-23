@@ -308,8 +308,9 @@ button:focus {
   /* background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
   background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
   background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%); */
-  background-color: #1a1a1a;
+  background-image: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
   margin-bottom: 200px; }
+
   .home_banner_area .box_1620 {
     min-height: 700px;
     border-radius: 12px;
@@ -383,9 +384,7 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
-  background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
-  background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
+  background-image: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
   margin-bottom: 120px; }
   .banner_area .box_1620 {
     background: #fff;
@@ -2547,18 +2546,17 @@ h6 {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
-        background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
-        background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%); }
+        background-image: -webkit-linear-gradient(0deg, #ca7dcf 0%, #794cdf 100%);
+
+      }
 
 /* End Welcome Area css
 ============================================================================================ */
 /* My Tabs Area css
 ============================================================================================ */
 .mytabs_area {
-  background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
-  background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
-  background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%); }
+  background-image: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
+}
 
 .tabs_inner .nav.nav-tabs {
   display: block;
