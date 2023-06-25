@@ -2756,16 +2756,16 @@ h6 {
     .personal_text .personal_social li a {
       line-height: 40px;
       width: 40px;
-      background: #e8e8e8;
+      background: #1b1a1a;
       border-radius: 5px;
       display: inline-block;
       text-align: center;
       color: #fff;
       font-size: 16px; }
     .personal_text .personal_social li:hover a {
-      background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
-      background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
-      background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);}
+      background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #794cdf 60%);
+      background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #794cdf 60%);
+      background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #794cdf 60%);}
 
 /* End Personal Profile Area css
 ============================================================================================ */

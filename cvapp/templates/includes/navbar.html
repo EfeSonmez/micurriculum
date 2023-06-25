@@ -13,24 +13,13 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}" style="font-size: 18px;">Home</a></li> 
-              <li class="nav-item"><a class="nav-link" href="about-us.html" style="font-size: 18px;">About</a></li> 
-              <li class="nav-item"><a class="nav-link" href="services.html" style="font-size: 18px;">Services</a></li> 
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="portfolio.html" style="font-size: 18px;">Portfolio</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html" style="font-size: 18px;">Elements</a></li>
-                </ul>
-              </li> 
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-size: 18px;">Blog</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                </ul>
-              </li> 
-              <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" style="font-size: 18px;">Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="{% url 'index' %}" style="font-size: 15px;">Home</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}" style="font-size: 15px;">Contact</a></li>
+                    {% for document in document %}
+                    <li class="nav-item"><a class="nav-link" href="{{ document.file.url }}" style="font-size: 15px;" target="_blank"> {{ document.button_text }} <i class="fa fa-download" style="color: white;" aria-hidden="true"></i> </a></li>
+                    {% endfor %}
+
+                </li>
             </ul>
           </div> 
         </div>

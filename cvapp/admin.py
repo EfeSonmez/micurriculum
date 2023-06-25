@@ -51,3 +51,13 @@ class EducationsAdmin(admin.ModelAdmin):
     
     class Meta:
         model = Educations
+
+@admin.register(Document)
+
+class Document(admin.ModelAdmin):
+    list_display = ['id','order','slug','button_text','file','updated_date','created_date',]
+    search_fields = ['slug','button_text','file',]
+    list_editable = ['order','slug','button_text','file',]
+    
+    class Meta:
+        model = Document   
