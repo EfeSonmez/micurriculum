@@ -14,6 +14,7 @@ from pathlib import Path
 import environ 
 
 
+
 env = environ.Env(DEBUG=(bool, False))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -86,10 +87,7 @@ WSGI_APPLICATION = "micurriculum.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    'default': env.db()
 }
 
 
@@ -142,3 +140,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+#Email Settings.
+vars().update(env.email_url())
+DEFAULT_FROM_EMAIL = 'efesoonmez@gmail.com'
+EMAIL_BACKEND = 'django.core.email.backends.smtp.EmailBackend'

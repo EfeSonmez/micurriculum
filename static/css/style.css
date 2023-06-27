@@ -308,7 +308,7 @@ button:focus {
   /* background-image: -moz-linear-gradient(0deg, #1a1a1a 40%, #6ec648 60%);
   background-image: -webkit-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%);
   background-image: -ms-linear-gradient(0deg, #1a1a1a 40%, #6ec648  60%); */
-  background-image: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
+  background-image: radial-gradient(circle, rgba(26,26,26,1) 71%, rgba(128,128,128,1) 100%);
   margin-bottom: 200px; }
 
   .home_banner_area .box_1620 {
@@ -384,7 +384,7 @@ button:focus {
   position: relative;
   z-index: 1;
   min-height: 350px;
-  background-image: radial-gradient(circle at 34.2% 44.3%, rgb(233, 79, 79) 6.5%, rgb(111, 34, 142) 100.2%);
+  background-image: radial-gradient(circle, rgba(26,26,26,1) 71%, rgba(128,128,128,1) 100%);
   margin-bottom: 120px; }
   .banner_area .box_1620 {
     background: #fff;
