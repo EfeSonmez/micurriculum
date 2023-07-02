@@ -1,0 +1,106 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600display=swap');
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper .static-txt{
+  color: #222222;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 10px;
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+  
+}
+
+.dynamic-txts li{
+  color: #fc6d6d;
+  margin-top: -1px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  top: 0;
+  position: relative; 
+  animation: slide 12s steps(2) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -60px;
+    }
+}
+
+.dynamic-txts li{
+  position: relative;
+}
+
+.dynamic-txts li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing{
+  40%,
+  60% {
+    left: calc(100% + 12px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+@media screen and (min-width:370px) and (max-width:600px) {
+
+    .wrapper .static-txt {
+        text-align: right;
+        font-size: 16px;
+        width: 40%;
+    }
+
+    @keyframes slide{
+        100%{
+            top: 0px;
+        }
+    }
+    .dynamic-txts li{
+        color: #fc6d6d;
+        margin-top: none;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 500;
+        top: 0;
+        position: relative; 
+        animation: slide 6s steps(2) infinite;
+      }
+    .dynamic-txts li::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        border-left: 2px solid #fc6d6d;
+        animation: typing 3s steps(8) infinite;
+      }
+ 
+}
