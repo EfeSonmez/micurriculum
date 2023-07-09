@@ -1,11 +1,21 @@
+Operations to perform:
+  Apply all migrations: admin, auth, contact, contenttypes, cvapp, sessions
+Running migrations:
+  No migrations to apply.
 asgiref==3.7.2
+boto3==1.28.1
+botocore==1.31.1
 Django==4.2.2
 django-environ==0.10.0
+django-storages==1.13.2
 gunicorn==20.1.0
+jmespath==1.0.1
 Pillow==9.5.0
 psycopg2==2.9.6
+python-dateutil==2.8.2
 python-dotenv==1.0.0
+s3transfer==0.6.1
+six==1.16.0
 sqlparse==0.4.4
 typing_extensions==4.6.3
-boto3
-django-storages
+urllib3==1.26.16
