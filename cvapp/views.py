@@ -4,7 +4,7 @@ from .models import GeneralSetting, ImageSetting, Skill, Experiences, Educations
 
 def get_general_setting(parameter):
     try:
-        obj = GeneralSetting.objects.get(name="parameter").parameter
+        obj = GeneralSetting.objects.get(name=parameter).parameter
     except GeneralSetting.DoesNotExist:
         obj = ''
 
@@ -12,7 +12,7 @@ def get_general_setting(parameter):
 
 def get_image_setting(parameter):
     try:
-        obj = ImageSetting.objects.get(name="parameter").file
+        obj = ImageSetting.objects.get(name=parameter).file
     except ImageSetting.DoesNotExist:
         obj = ''
 
