@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
 ]
 
 MIDDLEWARE = [
@@ -127,11 +127,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 STATICFILES_DIRS = [
-        BASE_DIR / 'static'
+        BASE_DIR / '/static/'
 ]
 
 if DEBUG:
-    STATIC_URL = "static/"
+    STATIC_URL = "/static/"
     STATIC_ROOT = BASE_DIR / 'staticfiles'
 
     MEDIA_URL = "/media/"
@@ -150,7 +150,7 @@ else:
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
     AWS_DEFAULT_ACL = 'public-read'
-    AWS_S3_BUCKET_PARAMETERS = {
+    AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 DEC 2099 20:00:99 GMT',
         'CacheControl': 'max-age=94608000',
     }
@@ -158,6 +158,9 @@ else:
     STATIC_ROOT = STATIC_URL
 
     MEDIA_LOCATION = 'media'
+    DOCUMENT_LOCATION = MEDIA_LOCATION + '/documents'
+    IMAGE_SETTING_LOCATION = MEDIA_LOCATION + '/image_settings'
+
 
 
 # Default primary key field type

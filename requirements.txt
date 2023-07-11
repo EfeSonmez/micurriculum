@@ -1,7 +1,3 @@
-Operations to perform:
-  Apply all migrations: admin, auth, contact, contenttypes, cvapp, sessions
-Running migrations:
-  No migrations to apply.
 asgiref==3.7.2
 boto3==1.28.1
 botocore==1.31.1
