@@ -151,7 +151,7 @@ else:
 
     AWS_DEFAULT_ACL = 'public-read'
     AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 DEC 2099 20:00:99 GMT',
+        'Expires': 'Thu, 31 DEC 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
     STATIC_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com/static/'
