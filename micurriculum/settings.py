@@ -165,7 +165,7 @@ else:
     DOCUMENT_LOCATION = MEDIA_LOCATION + '/documents'
     IMAGE_SETTING_LOCATION = MEDIA_LOCATION + '/image_settings'
 
-
+##s
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
